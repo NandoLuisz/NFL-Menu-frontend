@@ -1,10 +1,7 @@
-import { useContext } from "react"
 import { FoodOne } from "./FoodOne"
 import { Footer } from "./Footer"
 import { NavBar } from "./NavBar"
 import { Section } from "./Section"
-import { FoodContext } from "../context/FoodContext"
-import { ModalRegister } from "./ModalRegister"
 
 import { PageTransition } from "../utils/PageTransition "
 
