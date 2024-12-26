@@ -1,31 +1,31 @@
 [
     {
-        "image": "images/batata_frita.jpeg",
+        "image": "./src/images/batata_frita.jpeg",
         "name": "Batata Frita",
         "type": "batata"
     },
     {
-        "image": "images/cachorro_quente.jpeg",
+        "image": "./src/images/cachorro_quente.jpeg",
         "name": "Hotdog",
         "type": "hotDog"
     },
     {
-        "image": "images/hamburguer.jpeg",
+        "image": "./src/images/hamburguer.jpeg",
         "name": "Hambúrguer",
         "type": "hamburguer"
     },
     {
-        "image": "images/pastel.jpeg",
+        "image": "./src/images/pastel.jpeg",
         "name": "Pastel",
         "type": "pastel"
     },
     {
-        "image": "images/pizza.jpeg",
+        "image": "./src/images/pizza.jpeg",
         "name": "Pizza",
         "type": "pizza"
     },
     {
-        "image": "images/pao_arabe.jpg",
+        "image": "./src/images/pao_arabe.jpg",
         "name": "Pão Árabe",
         "type": "bread"
     }
