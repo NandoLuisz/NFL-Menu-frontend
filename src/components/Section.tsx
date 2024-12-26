@@ -5,7 +5,13 @@ import { FoodContext } from "../context/FoodContext"
 
 export const Section = () => {
 
-  const { confirmOrderToast } = useContext(FoodContext)
+  const context = useContext(FoodContext);
+
+  if (!context) {
+      return 
+  }
+
+  const { confirmOrderToast } = context
   return (
     <section className="w-[80%] max-md:w-[95%] h-[75vh] max-md:h-[58vh] flex items-center 
       max-md:flex-col justify-between overflow-hidden bg-orange-500 rounded-2xl px-20 pb-4 max-md:px-5">

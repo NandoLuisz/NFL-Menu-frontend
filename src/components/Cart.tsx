@@ -7,7 +7,12 @@ import { PageTransition } from "../utils/PageTransition ";
 import { Toast } from "../utils/Toast";
 
 export const Cart = () => {
-  const { foodsContext, removeItem, totalItems, subtotal } = useContext(FoodContext);
+  const context = useContext(FoodContext);
+
+  if (!context) {
+      return 
+  }
+  const { foodsContext, removeItem, totalItems, subtotal } = context
   
   const [toastWarningCartEmpty, setToastWarningCartEmpty] = useState<boolean>(false)
 
@@ -51,11 +56,11 @@ export const Cart = () => {
           <span>Detalhes</span>
           <span>Remover</span>
         </div>
-       {totalItems > 0 ? (
+       {totalItems > 0 && foodsContext != null ? (
          <div className="max-md:w-full">
            {foodsContext
-          .filter((item: any) => item.amount > 0)
-          .map((item: any) => (
+          .filter((item) => item.amount > 0)
+          .map((item) => (
             <div
                 key={item.id}
                 className="grid grid-cols-6 md:gap-4 max-md:grid-cols-3 items-center text-white text-opacity-70 md:py-3 border-b-[1px]"

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import foodFetch from "../axios/config";
+import { foodFetch } from "../axios/config";
 
 const FoodForm: React.FC = () => {
 

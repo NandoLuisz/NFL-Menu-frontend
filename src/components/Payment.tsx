@@ -18,7 +18,13 @@ interface ClientFormProps{
 
 export const Payment = () => {
 
-    const { foodsContext, clientContext, setClientContext, updateFoodsContext, setConfirmOrderToast } = useContext(FoodContext)
+    const context = useContext(FoodContext);
+
+    if (!context) {
+        return 
+    }
+
+    const { foodsContext, clientContext, setClientContext, updateFoodsContext, setConfirmOrderToast } = context
 
     const [modalConfirmSure, setModalConfirmSure] = useState(false)
 

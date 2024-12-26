@@ -29,6 +29,13 @@ const clientFormSchema = z.object({
 });
 
 export const Checkout = () => {
+
+    const context = useContext(FoodContext);
+
+    if (!context) {
+        return 
+    }
+
     const [clientRequest, setClientRequest] = useState<ClientFormProps>({
         firstname: "",
         secondname: "",
@@ -40,7 +47,7 @@ export const Checkout = () => {
         number: "",
     });
     const [toastWarningFormClient, setToastWarningFormClient] = useState<boolean>(false)
-    const { subtotal, setClientContext } = useContext(FoodContext);
+    const { subtotal, setClientContext } = context
 
     const deliveryFee = 2;
     const navigate = useNavigate();

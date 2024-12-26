@@ -6,7 +6,13 @@ import { FoodContext } from '../context/FoodContext';
 
 export const NavBar = () => {
 
-  const { totalItems } = useContext(FoodContext)
+  const context = useContext(FoodContext);
+
+  if (!context) {
+      return 
+  }
+
+  const { totalItems } = context
   const [cart, setCart] = useState(false)
 
   useEffect(() => {

@@ -18,10 +18,16 @@ interface FoodResponse{
 }
 
 export const FoodOne = () => {
+
+    const context = useContext(FoodContext);
+
+    if (!context) {
+        return 
+    }
  
-    const { foodsContext, increment, decrement } = useContext(FoodContext)
+    const { foodsContext, increment, decrement } = context
     const [filteredFood, setFilteredFood] = useState<FoodResponse[]>([])
-    const [selectedItem, setSelectedItem] = useState(null);
+    const [selectedItem, setSelectedItem] = useState<string | null>(null);
     const [filtered, setFiltered] = useState(false)
   
     const filterFood = (type: string) => {
@@ -41,7 +47,8 @@ return (
                 <div className="w-full flex items-center py-1 ">
                     <div className="w-full h-[160px] px-2 flex items-center justify-between gap-4 overflow-x-auto scroll-smooth">
                     {data.map((item) => (
-                        <div
+                        // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
+<div
                         key={item.name}
                         className="flex flex-col items-center gap-2"
                         onClick={() => {
@@ -70,7 +77,8 @@ return (
                 </div>
                 <ul className="flex gap-12 justify-center max-md:gap-3 max-md:-mt-5 px-4">
                     {drinks.map((item, index) => (
-                        <div key={drinks[index]} onClick={() => {
+                        // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
+<div key={drinks[index]} onClick={() => {
                             if(selectedItem === item){
                                 setSelectedItem(null)
                                 setFiltered(false)
