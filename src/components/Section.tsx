@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import bg_family from "../images/bg_family.png"
+import bg_family from "/images/bg_family.png"
 import { Toast } from "../utils/Toast"
 import { FoodContext } from "../context/FoodContext"
 
