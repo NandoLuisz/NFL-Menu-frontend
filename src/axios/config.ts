@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export const foodFetch = axios.create({
-    baseURL: "http://localhost:8080/",
+    baseURL: "https://app-food-rv1n.onrender.com/",
     headers: {
         'Content-Type': 'application/json', 
       },
