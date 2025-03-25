@@ -15,7 +15,7 @@ Este projeto é um menu online onde o usuário poderá escolher os items e confi
 <div><br/>
     <p align="center">
       <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=ts,react,tailwind,mysql" />
+        <img src="https://skillicons.dev/icons?i=ts,react,tailwind" />
       </a>
     </p>
 </div>
