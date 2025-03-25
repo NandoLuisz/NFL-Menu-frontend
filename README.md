@@ -19,3 +19,7 @@ Este projeto é um menu online onde o usuário poderá escolher os items e confi
       </a>
     </p>
 </div>
+
+![image-1](https://github.com/user-attachments/assets/f463ddab-7ae8-4c61-a15d-55eabda1f2fd)
+
+
