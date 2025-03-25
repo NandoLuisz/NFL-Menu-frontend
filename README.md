@@ -1,50 +1,21 @@
-# React + TypeScript + Vite
+# 🍔 NFL's Menu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um menu online onde o usuário poderá escolher os items e confimar a compra.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
+✅ O cliente poderá escolher os produtos que desejar.  
+✅ Cadastro de dados como nome, e-mail, telefone e endereço. 
+✅ Com a confirmação da comprar, o cliente receberá uma e-mail com os detalhes do pedidos. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologias Utilizadas
+- Linguagem Java - SpringBoot para o backend:  <a href="https://github.com/NandoLuisz/NFL-Menu-backend">repositório backend</a>.
+- Framework ReactJs.
+- MySQL como banco de dados.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<div><br/>
+    <p align="center">
+      <a href="https://skillicons.dev">
+        <img src="https://skillicons.dev/icons?i=java,ts,react,tailwind,mysql" />
+      </a>
+    </p>
+</div>
