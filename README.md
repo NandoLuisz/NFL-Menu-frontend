@@ -1,9 +1,9 @@
 # 🍔 NFL's Menu
 
-Este projeto é um menu online onde o usuário poderá escolher os items e confimar a compra.
+Este projeto é um menu online comidas fastfood.
 
 ## 🚀 Funcionalidades
-✅ O cliente poderá escolher os produtos que desejar.  
+✅ O cliente poderá selecionar comidas e bebidas que desejar e depois efetuar a confirmação do pedido.  
 ✅ Cadastro de dados como nome, e-mail, telefone e endereço. 
 ✅ Com a confirmação da comprar, o cliente receberá uma e-mail com os detalhes do pedidos. 
 
